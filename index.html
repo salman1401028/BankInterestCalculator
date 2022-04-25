@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank_Interest_Calculator</title>
+    <link href="index.css" rel="Stylesheet">
+</head>
+
+<body>
+    
+    <div class="bank-balance-display">
+
+        <h1 id="heading">Interest Calculator</h1>
+        <table>
+            <tr>
+                <th>Account Holder Name</th>
+                <th>Current Account Balance</th>
+                <th>Balance After Interest</th>
+            </tr>
+            <tr>
+                <td>Aditya</td>
+                <td><input type="number" id="cx1"></td>
+                <td><input type="number" id="updated-Bank-Balance1" disabled></td>
+            </tr>
+            <tr>
+                <td>Mahesh</td>
+                <td><input type="number" id="cx2"></td>
+                <td><input type="number" id="updated-Bank-Balance2" disabled></td>
+            </tr>
+            <tr>
+                <td>Amrita</td>
+                <td><input type="number" id="cx3"></td>
+                <td><input type="number" id="updated-Bank-Balance3" disabled> </td>
+            </tr>
+            <tr>
+                <td>Ankit</td>
+                <td><input type="number" id="cx4"></td>
+                <td><input type="number" id="updated-Bank-Balance4" disabled> </td>
+            </tr>
+            <tr>
+                <td>Salman</td>
+                <td><input type="number" id="cx5"></td>
+                <td><input type="number" id="updated-Bank-Balance5" disabled> </td>
+            </tr>
+        </table>
+        <button onclick="calculateAmount()">Calculate</button>
+    </div>
+<!--****************************************************-->
+    <div class="Note">
+        <h2 style="color: red">NOTE:-</h2>
+        <h3>The interest will be calculated based on the following conditions:-</h3>
+        <ul>
+            <li>If Amount is greater than 200000 the interest given will be 10%.</li>
+            <li>If Amount is greater than 100000 the interest given will be 5%.</li>
+            <li>If Amount is less than or equal to 100000 the interest given will be 3%.</li>
+
+        </ul>
+    </div>
+
+
+<!--****************************************************-->
+    <script src="index.js">
+
+    </script>
+
+
+
+</body>
+
+<!--TRYING OPTIMISED SOLUTION BELOW FOR JAVA_SCRIPT-->
+
+<!--<body>
+    <div class="bank-balance-display">
+        <table>
+            <tr>
+                <th>Account Holder Name</th>
+                <th>Current Account Balance</th>
+                <th>Balance After Interest</th>
+            </tr>
+            <tr>
+                <td>Aditya</td>
+                <td><input type="number" class="input-balances"></td>
+                <td><input type="number" class="display-final-balances" disabled></td>
+            </tr>
+            <tr>
+                <td>Mahesh</td>
+                <td><input type="number" class="input-balances"></td>
+                <td><input type="number" class="display-final-balances" disabled></td>
+            </tr>
+
+            <tr>
+                <td>Amrita</td>
+                <td><input type="number" class="input-balances"></td>
+                <td><input type="number" class="display-final-balances" disabled></td>
+            </tr>
+        </table>
+        <button onclick="calculateAmount()">Calculate</button>
+    </div>
+    <script src="index.js">
+
+    </script>
+
+
+
+</body>-->
+
+</html>
